@@ -1,0 +1,837 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+@font-face {
+    font-family: Akira;
+    src: url("../fonts/Akira\ Super\ Bold.otf");
+}
+
+:root {
+    --hitam: hsl(0, 0%, 0%);
+    --biru: #14213d;
+    --orange: #fca311;
+    --abu: #e5e5e5;
+    --putih: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--scroll-padding);
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--hitam);
+    background-color: var(--putih);
+    margin: 0;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #151515;
+}
+
+#preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 0px);
+    left: calc(50% - 30px);
+    border: 6px solid var(--orange);
+    border-top-color: #151515;
+    border-bottom-color: #151515;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: var(--orange);
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+}
+
+.back-to-top i {
+    font-size: 28px;
+    color: var(--putih);
+    line-height: 0;
+}
+
+.back-to-top:hover {
+    background: #151515;
+}
+
+.back-to-top:hover i {
+    color: var(--orange);
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Section General
+--------------------------------------------------------------*/
+section {
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.section-title {
+    padding-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--abu);
+}
+
+.section-title h2::before,
+.section-title h2::after {
+    content: "";
+    width: 100px;
+    height: 1px;
+    display: inline-block;
+    background: var(--orange);
+    margin: 4px 10px;
+}
+
+.section-title p {
+    margin: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #151515;
+}
+
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+.navbar-brand {
+    margin-left: 30px;
+}
+
+.navbar a {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background-color: var(--orange);
+    color: var(--putih);
+}
+
+.nav-item {
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: var(--orange);
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--orange);
+}
+
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/bg\ banner.webp") top center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+#hero:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero .container {
+    position: relative;
+    text-align: center;
+}
+
+#hero h1 {
+    margin: 0;
+    margin-top: 100px;
+    font-size: 100px;
+    font-family: Akira;
+    line-height: 64px;
+}
+
+#hero a {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Responsive Hero */
+@media screen and (max-width: 640px) {
+    /*small size*/
+    #hero h1 {
+        font-size: 53px;
+    }
+
+    #hero h4 {
+        font-size: 17px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Hero Juara
+--------------------------------------------------------------*/
+.countdown-juara {
+    display: flex;
+}
+.hero-juara {
+    width: 688px;
+    height: 230px;
+    border: 20px solid transparent;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, #f3742a, #883283);
+    border-radius: 40px;
+}
+.hero-juara ul {
+    display: flex;
+    justify-content: center;
+    padding-right: 32px;
+}
+.hero-juara ul li {
+    list-style-type: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--putih);
+}
+.hero-juara ul li span {
+    display: block;
+    font-size: 4rem;
+    color: var(--putih);
+    font-weight: bold;
+}
+.hero-juara ul li.separator {
+    margin: 10px;
+    font-size: 4rem;
+    line-height: 1;
+    color: var(--putih);
+}
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+#about {
+    padding: 0;
+    margin: 0;
+    height: 90vh;
+    position: relative;
+}
+
+#about .title {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#about .desc {
+    font-size: 15pt;
+    font-weight: 400;
+}
+
+#svg-3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.about-img img {
+    height: 350px;
+    width: auto;
+}
+
+/* Responsive About */
+@media screen and (max-width: 640px) {
+    /*small size*/
+    #svg-2 svg,
+    #about img {
+        display: none;
+    }
+
+    .containerAbout {
+        padding-top: 20px !important;
+    }
+
+    #about .title {
+        font-size: 40px;
+    }
+
+    #about .desc {
+        font-size: 12pt;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+    /*medium size*/
+    #about .title {
+        font-size: 40px;
+    }
+
+    #about .desc {
+        font-size: 12pt;
+    }
+
+    .about-img img {
+        height: 300px;
+    }
+
+    .aboutContainer {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (min-width: 1008px) and (max-width: 1366px) {
+    /*large size*/
+    #about .title {
+        font-size: 40px;
+    }
+
+    #about .desc {
+        font-size: 12pt;
+    }
+
+    .about-img img {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1367px) {
+    /*extra large size*/
+    .aboutContainer {
+        padding-top: 30px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Video
+--------------------------------------------------------------*/
+#video.video {
+    height: 90vh;
+}
+
+/* Responsive Video */
+@media screen and (max-width: 640px) {
+    /*small size*/
+    .video-container {
+        height: 370px !important;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+    /*medium size*/
+    .video-container {
+        height: 39vh !important;
+    }
+}
+
+/*--------------------------------------------------------------
+# Timeline
+--------------------------------------------------------------*/
+.timeline {
+    position: relative;
+}
+
+.container-timeline {
+    padding-top: 30px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    background-color: #fca311;
+    top: 0;
+    bottom: 0;
+    left: 7px;
+    margin-left: -1px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.timeline-content {
+    text-align: left;
+    margin-left: 150px;
+}
+
+.timeline-icon {
+    position: absolute;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fca311;
+    transform: translateY(-50%);
+}
+
+.timeline-line {
+    position: absolute;
+    width: 15%;
+    /* Mengubah lebar menjadi 50% */
+    height: 3px;
+    background-color: #fca311;
+
+    top: calc(50% - 1px);
+}
+
+.timeline-line::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #fca311;
+    left: calc(100% - 7.5px);
+    top: calc(50% - 7.5px);
+    transform: rotate(45deg);
+}
+
+.bg-orange {
+    background-color: #fca311;
+}
+
+.more-details {
+    color: #fca311;
+    text-decoration: none;
+}
+
+.web-programming {
+    border-width: 10px;
+}
+
+.webpro-desc {
+    font-size: 12pt;
+}
+
+#btnDetailWebpro {
+    background-color: var(--putih);
+    color: var(--orange);
+    border-radius: 20px;
+}
+
+#btnDetailDespac {
+    background-color: var(--orange);
+    color: var(--putih);
+    border-radius: 20px;
+}
+
+/* Responsive Timeline */
+@media screen and (max-width: 640px) {
+    /*small size*/
+    .section-title p {
+        font-size: 25px;
+    }
+
+    .timeline-content {
+        margin-left: 150px;
+    }
+
+    .timeline-line {
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+    /*medium size*/
+    .timeline-line {
+        width: 150px;
+    }
+
+    .container-timeline {
+        margin-left: 120px;
+    }
+
+    .timeline-content {
+        margin-left: 200px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Info Pendaftaran
+--------------------------------------------------------------*/
+.infoDaftar {
+    background-color: var(--biru);
+    padding-bottom: 100px;
+}
+
+.infoDaftar img {
+    height: 540px;
+    width: auto;
+}
+
+.infoDaftar .container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.swiper-button-prev {
+    left: -60px;
+}
+
+.swiper-button-next {
+    right: -60px;
+}
+
+.title-lomba {
+    color: var(--orange);
+}
+
+.btn-guidebook {
+    width: 170px;
+}
+
+.btn-guidebook,
+.btn-register {
+    border-radius: 20px;
+    color: var(--hitam);
+    background-color: var(--putih);
+    font-weight: 500;
+}
+
+.btn-guidebook:hover,
+.btn-register:hover,
+.btn-guidebook:focus,
+.btn-register:focus {
+    color: var(--putih);
+    background-color: var(--orange);
+}
+
+/* Responsive infoPendaftar */
+@media screen and (max-width: 640px) {
+    /*small size*/
+    .section-title h2::before,
+    .section-title h2::after {
+        width: 75px;
+    }
+
+    .img-lomba img {
+        width: 340px;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .btn-guidebook {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+    /*medium size*/
+    .img-lomba img {
+        width: 320px;
+        height: auto;
+    }
+
+    .btn-guidebook {
+        margin-bottom: 20px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Modal Pendaftaran
+--------------------------------------------------------------*/
+#form2 {
+left: 450px;
+}
+.modal-lomba {
+    position: relative;
+}
+
+.modal-lomba img {
+    height: auto;
+    width: auto;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+.modal-lomba span {
+    color: var(--putih);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 38px;
+    font-weight: 700;
+}
+
+input[type="file"] {
+    width: 350px;
+    max-width: 100%;
+    color: #444;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #555;
+}
+
+input[type="file"]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: var(--orange);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background: #ee9910;
+}
+
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+.gallery {
+    padding-top: 50px;
+    height: 90vh;
+    background-color: var(--biru);
+}
+
+.gallery p {
+    color: var(--putih);
+}
+
+.gallery .swiper-pagination {
+    margin-top: 30px;
+    position: relative;
+}
+
+.gallery .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: var(--putih);
+}
+
+.gallery .swiper-pagination-bullet-active {
+    background-color: var(--orange);
+}
+
+.gallery-lightbox {
+    cursor: pointer;
+}
+
+.gallery-lightbox:active {
+    cursor: grabbing;
+}
+
+/* Responsive Gallery */
+@media screen and (max-width: 640px) {
+    /*small size*/
+    .gallery {
+        height: 80vh;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+    /*medium size*/
+    .gallery {
+        height: 75vh;
+    }
+}
+
+/*--------------------------------------------------------------
+# Medpart and sponsor
+--------------------------------------------------------------*/
+#medpart,
+#sponsor {
+    height: auto;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+    background: black;
+    padding: 0 0 30px 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+#footer .footer-top {
+    background: #151515;
+    border-bottom: 1px solid #222222;
+    padding: 60px 0 30px 0;
+}
+
+#footer .footer-top .footer-info {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+}
+
+#footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #292929;
+    color: #fff;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 4px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+    background: var(--orange);
+    color: #151515;
+    text-decoration: none;
+}
+
+#footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: var(--orange);
+    font-size: 18px;
+    line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+    color: #fff;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+    color: var(--orange);
+}
+
+#footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+}
+
+#footer .credits {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+}
+
+#footer .credits a {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+#footer img {
+    margin-right: 20px;
+}
+
+/* Responsive Footer */
+@media screen and (max-width: 640px) {
+    /*small size*/
+    #footer img:nth-child(3),
+    #footer img:nth-child(4) {
+        width: 200px;
+        height: auto;
+    }
+    #footer img {
+        margin: 10px;
+    }
+}
+.card-expo {
+    transition: transform 0.3s;
+}
+.card-expo:hover {
+    transform: scale(1.5);
+}
