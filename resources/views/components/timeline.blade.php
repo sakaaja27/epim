@@ -121,39 +121,60 @@
                             <div class="timeline-icon"></div>
                             <div class="timeline-content">
                                 <h6 class="fw-bold">Pendaftaran & Pengumpulan Proposal</h6>
-                                <p>10 Juli - 19 Agustus 2023</p>
+                                <p>1 Juli - 20 Agustus 2024</p>
                             </div>
                         </div>
                         <div class="pt-4 timeline-item ">
                             <div class="timeline-line"></div>
                             <div class="timeline-icon"></div>
                             <div class="timeline-content">
-                                <h6 class="fw-bold">Pengumuman Finalis</h6>
-                                <p>28 Agustus 2023</p>
+                                <h6 class="fw-bold">Penutupan dan pengumpulan terakhir proposal lomba web + design 
+                                </h6>
+                                <p>20 Agustus 2024</p>
                             </div>
                         </div>
                         <div class="pt-4 timeline-item">
                             <div class="timeline-line"></div>
                             <div class="timeline-icon"></div>
                             <div class="timeline-content ">
-                                <h6 class=" fw-bold">Babak Final</h6>
-                                <p>8 September 2023</p>
+                                <h6 class=" fw-bold">pengumuman finalis web + design packaging 
+                                </h6>
+                                <p>23 Agustus 2024</p>
                             </div>
                         </div>
                         <div class="pt-4 timeline-item  ">
                             <div class="timeline-line"></div>
                             <div class="timeline-icon"></div>
                             <div class="timeline-content">
-                                <h6 class=" fw-bold">Pengumuman Juara</h6>
-                                <p>8 September 2023</p>
+                                <h6 class=" fw-bold"> technical meeting web dan design
+                                </h6>
+                                <p>23 Agustus 2024</p>
                             </div>
                         </div>
                         <div class="pt-4 timeline-item ">
                             <div class="timeline-line"></div>
                             <div class="timeline-icon"></div>
                             <div class="timeline-content">
-                                <h6 class="fw-bold">Pemberian Hadiah</h6>
-                                <p>9 September 2023</p>
+                                <h6 class="fw-bold">Penutupan dan pengumuman akhir karya poster videography</h6>
+                                <p>28 Agustus 2024</p>
+                            </div>
+                        </div>
+                        <div class="pt-4 timeline-item ">
+                            <div class="timeline-line"></div>
+                            <div class="timeline-icon"></div>
+                            <div class="timeline-content">
+                                <h6 class="fw-bold">final offline di polije web dan design packaging 
+                                </h6>
+                                <p>31 Agustus 2024</p>
+                            </div>
+                        </div>
+                        <div class="pt-4 timeline-item ">
+                            <div class="timeline-line"></div>
+                            <div class="timeline-icon"></div>
+                            <div class="timeline-content">
+                                <h6 class="fw-bold">pengumuman juara
+                                </h6>
+                                <p>1 September 2024</p>
                             </div>
                         </div>
                     </div>

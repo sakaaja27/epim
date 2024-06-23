@@ -20,7 +20,7 @@
                             </p>
                             <br>
                             <div class="row">
-                                <div class="col-lg-4"><a href="{{ asset('GUIDE BOOK EPIM 2023.pdf') }}"
+                                <div class="col-lg-4"><a href="https://drive.google.com/file/d/1j9DkE0zGHiWbnUIC4Nnth-P_W-9vL5uF/view"
                                         download="GuideBook EPIM 2023">
                                         <button class="btn btn-guidebook">Guidebook <i
                                                 class="fas fa-download ms-2"></i></button></a></div>
@@ -56,7 +56,7 @@
                             <br>
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <a href="{{ asset('GUIDE BOOK EPIM 2023.pdf') }}"
+                                    <a href="https://drive.google.com/file/d/1_5RVlZ7cvvpIOT7viVqIjgcRycAapbTT/view"
                                         download="GuideBook EPIM 2023"><button class="btn btn-guidebook"
                                             id="btn-guidebook">Guidebook <i
                                                 class="fas fa-download ms-2"></i></button></a>
@@ -96,7 +96,7 @@
                             <br>
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <a href="{{ asset('GUIDE BOOK EPIM 2023.pdf') }}"
+                                    <a href="https://drive.google.com/file/d/1WMJGnMFKRbEU8Z0pSy8ivSK9DfQghwsj/view"
                                         download="GuideBook EPIM 2023"><button class="btn btn-guidebook"
                                             id="btn-guidebook">Guidebook <i
                                                 class="fas fa-download ms-2"></i></button></a>
@@ -130,7 +130,7 @@
                             <br>
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <a href="{{ asset('GUIDE BOOK EPIM 2023.pdf') }}"
+                                    <a href="https://drive.google.com/file/d/1ewZWU1vBarzcP5RMbPyokOWzjLXY8bRg/view"
                                         download="GuideBook EPIM 2023"><button class="btn btn-guidebook"
                                             id="btn-guidebook">Guidebook <i
                                                 class="fas fa-download ms-2"></i></button></a>

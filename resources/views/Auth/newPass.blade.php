@@ -129,7 +129,7 @@
                                             <input autocomplete="off" type="email" name="email"
                                                 class="form-control form-control-lg @error('email') is-invalid @enderror"
                                                 required id="email-address"
-                                                placeholder="Enter your email address or username">
+                                                placeholder="Enter your email address">
                                             @error('email')
                                                 <div class="invalid-feedback">
                                                     {{ $message }}

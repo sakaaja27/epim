@@ -37,6 +37,12 @@
                                 <button id="btnDetailWebpro" class="btn" data-bs-toggle="modal"
                                     data-bs-target="#modalDetilWebpro">Selengkapnya<i class="fas fa-arrow-right ms-1"></i>
                                 </button>
+                                <button id="btnDetailWebpro" class="btn wa">
+                                    <a href="https://drive.google.com/file/d/1j9DkE0zGHiWbnUIC4Nnth-P_W-9vL5uF/view" class="text-warning ">
+                                        Unduh GuideBook
+                                    </a>
+                                    <i class="fa-solid fa-download ms-2"></i>
+                                </button>
                                 {{-- d --}}
 
                             </div>
@@ -66,6 +72,12 @@
                                 <button id="btnDetailDespac" class="btn" data-bs-toggle="modal"
                                     data-bs-target="#modalDetilDespac">Selengkapnya<i
                                         class="fas fa-arrow-right ms-1"></i></button>
+                                        <button id="btnDetailDespac" class="btn ">
+                                            <a href="https://drive.google.com/file/d/1_5RVlZ7cvvpIOT7viVqIjgcRycAapbTT/view" class="text-white center">
+                                                Unduh GuideBook
+                                            </a>
+                                            <i class="fa-solid fa-download ms-2"></i>
+                                        </button>
 
 
 
@@ -95,6 +107,12 @@
                                 <button id="btnDetailWebpro" class="btn" data-bs-toggle="modal"
                                     data-bs-target="#modalDetilPoster">Selengkapnya<i
                                         class="fas fa-arrow-right ms-1"></i></button>
+                                        <button id="btnDetailWebpro" class="btn ">
+                                            <a href="https://drive.google.com/file/d/1WMJGnMFKRbEU8Z0pSy8ivSK9DfQghwsj/view" class="text-warning center">
+                                                Unduh GuideBook
+                                            </a>
+                                            <i class="fa-solid fa-download ms-2"></i>
+                                        </button>
                             </div>
                         </div>
                     </div>
@@ -113,25 +131,25 @@
                                             fill ="black" />
                                     </svg>
                                 </div>
-                                <p class="mb-0 flex-grow-1 webpro-desc">Video dengan teknik cinematic dan narasi visual untuk menyampaikan pesan atau cerita dalam karya video yang kreatif dan inovatif.
+                                <p class="mb-0 flex-grow-1 webpro-desc">Video dengan teknik cinematic dan narasi visual
+                                    untuk menyampaikan pesan atau cerita dalam karya video yang kreatif dan inovatif.
                                 </p>
                             </div>
                             <div class="text-end fw-bold pt-2">
                                 <button id="btnDetailDespac" class="btn" data-bs-toggle="modal"
                                     data-bs-target="#modalDetilVideo">Selengkapnya<i
                                         class="fas fa-arrow-right ms-1"></i></button>
+                                <button id="btnDetailDespac" class="btn ">
+                                    <a href="https://drive.google.com/file/d/1ewZWU1vBarzcP5RMbPyokOWzjLXY8bRg/view" class="text-white center">
+                                        Unduh GuideBook
+                                    </a>
+                                    <i class="fa-solid fa-download ms-2"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="text-center">
-                    <button id="btnDetailDespac" class="btn btn-lg col-3 center">
-                        <a href="{{ asset('GUIDE BOOK EPIM 2023.pdf') }}" class="text-white center">
-                            Unduh GuideBook
-                        </a>
-                        <i class="fa-solid fa-download ms-2"></i>
-                    </button>
-                </div>
+                
             </div>
         </div>
 
@@ -207,7 +225,12 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p>Lomba Videography merupakan perlombaan atau kompetisi pembuatan video singkat dengan durasi minimal 1 menit dan maksimal 3 menit dengan tema Bisnis Digital yang dilaksanakan sebagai wadah siswa siswi SMA/SMK/MA sederajat untuk menyalurkan bakatnya dalam bidang videografi. Kegiatan ini diselenggarakan oleh Himpunan Mahasiswa Jurusan Teknologi Informasi (HMJTI) Politeknik Negeri Jember, dimana kegiatan ini merupakan salah satu kegiatan dalam serangkaian acara EPIM. Perlombaan ini dilaksanakan dengan 1 tahap yaitu seleksi secara online.</p>
+                        <p>Lomba Videography merupakan perlombaan atau kompetisi pembuatan video singkat dengan durasi
+                            minimal 1 menit dan maksimal 3 menit dengan tema Bisnis Digital yang dilaksanakan sebagai wadah
+                            siswa siswi SMA/SMK/MA sederajat untuk menyalurkan bakatnya dalam bidang videografi. Kegiatan
+                            ini diselenggarakan oleh Himpunan Mahasiswa Jurusan Teknologi Informasi (HMJTI) Politeknik
+                            Negeri Jember, dimana kegiatan ini merupakan salah satu kegiatan dalam serangkaian acara EPIM.
+                            Perlombaan ini dilaksanakan dengan 1 tahap yaitu seleksi secara online.</p>
                     </div>
                 </div>
             </div>

@@ -63,7 +63,7 @@
                                             {{-- <a class="link link-primary link-sm" tabindex="-1" href="#">Need Help?</a> --}}
                                         </div>
                                         <div class="form-control-wrap">
-                                            <input autocomplete="off" type="email" name="email" class="form-control form-control-lg  @error('email') is-invalid @enderror" value="{{ old('email') }}" required id="email-address" placeholder="Enter your email address or username">
+                                            <input autocomplete="off" type="email" name="email" class="form-control form-control-lg  @error('email') is-invalid @enderror" value="{{ old('email') }}" required id="email-address" placeholder="Enter your email address ">
                                             @error('email')
                                             <div class="invalid-feedback">
                                                 {{ $message }}
@@ -84,46 +84,28 @@
                             </div><!-- .nk-block -->
                             
                         </div><!-- .nk-split-content -->
-                        <div class="nk-split-content nk-split-stretch bg-lighter d-flex toggle-break-lg toggle-slide toggle-slide-right" data-toggle-body="true" data-content="athPromo" data-toggle-screen="lg" data-toggle-overlay="true">
-                            <div class="slider-wrap w-100 w-max-550px p-3 p-sm-5 m-auto">
+                        <div class="nk-split-content nk-split-stretch bg-lighter d-flex toggle-break-lg toggle-slide toggle-slide-right"
+                            data-toggle-body="true" data-content="athPromo" data-toggle-screen="lg"
+                            data-toggle-overlay="true">
+                            <div class="slider-wrap w-100 w-max-550px p-3 p-sm-5 m-auto text-center">
                                 <div class="slider-init" data-slick='{"dots":true, "arrows":false}'>
                                     <div class="slider-item">
                                         <div class="nk-feature nk-feature-center">
-                                            <div class="nk-feature-img">
-                                                <img class="round" src="{{ asset('img') }}/thumbnail.webp" srcset="{{ asset('img') }}/thumbnail.webp" alt="">
+                                            <div class="nk-feature-img text-center">
+                                                <img class="round mx-auto d-block" src="{{ asset('img') }}/thumbnail.webp"
+                                                    srcset="{{ asset('img') }}/thumbnail.webp" alt="">
                                             </div>
-                                            <div class="nk-feature-content py-4 p-sm-5">
+                                            {{-- <div class="nk-feature-content py-4 p-sm-5">
                                                 <h4>EPIM</h4>
-                                                
-                                            </div>
+
+                                            </div> --}}
                                         </div>
-                                    </div><!-- .slider-item -->
-                                    <div class="slider-item">
-                                        <div class="nk-feature nk-feature-center">
-                                            <div class="nk-feature-img">
-                                                <img class="round" src="{{ asset('img') }}/thumbnail.webp" srcset="{{ asset('img') }}/thumbnail.webp" alt="">
-                                            </div>
-                                            <div class="nk-feature-content py-4 p-sm-5">
-                                                <h4>Dashlite</h4>
-                                                <p>You can start to create your products easily with its user-friendly design & most completed responsive layout.</p>
-                                            </div>
-                                        </div>
-                                    </div><!-- .slider-item -->
-                                    <div class="slider-item">
-                                        <div class="nk-feature nk-feature-center">
-                                            <div class="nk-feature-img">
-                                                <img class="round" src="dashboard_asset/images/slides/promo-c.png" srcset="dashboard_asset/images/slides/promo-c2x.png 2x" alt="">
-                                            </div>
-                                            <div class="nk-feature-content py-4 p-sm-5">
-                                                <h4>Dashlite</h4>
-                                                <p>You can start to create your products easily with its user-friendly design & most completed responsive layout.</p>
-                                            </div>
-                                        </div>
-                                    </div><!-- .slider-item -->
-                                </div><!-- .slider-init -->
+                                    </div><!--.slider-item -->
+                                    
+                                </div><!--.slider-init -->
                                 <div class="slider-dots"></div>
                                 <div class="slider-arrows"></div>
-                            </div><!-- .slider-wrap -->
+                            </div><!--.slider-wrap -->
                         </div><!-- .nk-split-content -->
                     </div><!-- .nk-split -->
                 </div>
